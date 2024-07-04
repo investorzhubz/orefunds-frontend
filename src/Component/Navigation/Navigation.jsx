@@ -66,7 +66,7 @@ function Navigation() {
               <div className="upper-menu-right-side">
                      <span>
                       <FaEnvelope color='#85BB65'/>
-                      <p>support@vipsrefunds.com</p>
+                      <p>support@pncrefunds.com</p>
                      </span>
               </div>
             </div>

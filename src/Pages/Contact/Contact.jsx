@@ -100,7 +100,7 @@ function Contact() {
             <p>
               Email Address
               <span>
-              support@vipsrefunds.com
+              support@pncrefunds.com
               </span>
             </p>
           </div>
