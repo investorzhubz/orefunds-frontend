@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import './contact.css'
 import Navigation from '../../Component/Navigation/Navigation'
 import Footer from '../../Component/Footer/Footer'
 import { ToastContainer, toast } from 'react-toastify'
 import axios from 'axios'
+
 import { useAuthContext } from '../../Hooks/useAuthContext'
 
 function Contact() {
@@ -105,7 +107,7 @@ function Contact() {
             </p>
           </div>
         </div>
-        <div class="contact-details-tabs">
+        {/* <div class="contact-details-tabs">
           <div class="contact-details-tabs-icon">
             <ion-icon name="call-outline"></ion-icon>
           </div>
@@ -118,7 +120,7 @@ function Contact() {
               </span>
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
 

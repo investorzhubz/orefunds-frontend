@@ -30,7 +30,6 @@ function Footer() {
         <li>support@pncrefunds.com</li>
         <li>6 Wayside Rd Suite G-1, Burlington,
 MA 01803, United States</li>
-        <li>774-362-1928</li>
         </ul>
 
     </div>
