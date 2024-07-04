@@ -1,0 +1,8 @@
+.testimonial{
+
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+}

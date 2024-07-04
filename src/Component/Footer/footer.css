@@ -1,0 +1,111 @@
+.footer {
+    position: relative;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    background-color: #0A0F20;
+    
+
+}
+.footer-widget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.pnc-bank-section{
+    font-size: 18px;
+    width: 33.33%;
+}
+
+.usefulLinks ul{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    color: white;
+   
+}
+.usefulLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 33.33%;
+   
+}
+.usefulLinks li{
+    color: white;
+    margin-top: 1rem;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    color: white;
+    width: 33.33%;
+}
+
+.contactInfo ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    color: white;
+}
+.contactInfo li{
+    margin-top: 1rem;
+}
+.pnc-bank-section{
+    color: #f7f7f7;
+    font-size: 15px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        position: relative;
+        padding: 2rem 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        background-color: #0A0F20;
+        
+    
+    }
+    .footer-widget{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0rem;
+        flex-direction: column;
+    }
+    .pnc-bank-section{
+        font-size: 15px;
+        width: 100%;
+    }
+    .usefulLinks{
+        
+        width: 100%;
+        margin-top: 2rem;
+       
+    }
+    .contactInfo{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+
+
+}
