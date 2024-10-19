@@ -20,9 +20,16 @@ function AdminPanel() {
     const [shouldMenuSlide, setShouldMenuSlide] = useState(false);
     const [dashUser, setDashUser] = useState(false);
     const [sidemenu, setSideMenu] = useState(false);
-    const { user } = useAuthContext();
+    const { user,dispatch } = useAuthContext();
     const [loading, setLoading] = useState(true); // Loading state
     const navigate=useNavigate()
+    const logout=()=>{
+        dispatch({type:'LOGOUT',payload:null})
+        setTimeout(()=>{
+            navigate('/rf-admin')
+
+        },3000)
+    }
     useEffect(()=>{
 
         axios.get(`${process.env.REACT_APP_BACKEND_URL}/admin/isadmin`,{
@@ -106,7 +113,7 @@ function AdminPanel() {
                 {dashUser && (
                     <div className="user-menu">
                         <p className='logout' onClick={() => {
-                            // logout()
+                            logout()
                         }}>
                             <FaSignOutAlt />Logout
                         </p>

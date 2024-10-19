@@ -147,13 +147,14 @@ function ViewProfile() {
                         <>
                             <div className="ppdprofile">
                                 {/* Profile Image */}
-                                {!data.profile ? (
-                                    <img src={profile} alt="profile" />
+                                {data.profile ? (
+                                  <img
+                                  src={!imgPreview ? `${process.env.REACT_APP_IMG_BACKEND_URL}/images/${data.profile}` : imgPreview}
+                                  alt="profile"
+                              />
+                                   
                                 ) : (
-                                    <img
-                                        src={!imgPreview ? `${process.env.REACT_APP_IMG_BACKEND_URL}/images/${data.profile}` : imgPreview}
-                                        alt="profile"
-                                    />
+                                  <img src={profile} alt="profile" />
                                 )}
                                 <div className="edit-profile">
                                     <FaPencilAlt onClick={handlePencilChange} />

@@ -10,7 +10,7 @@ import AdminSidebar from './AdminSideBar'
 
 
 function GiftCard() {
-const {user}=useAuthContext()
+const {user,dispatch}=useAuthContext()
 const [sidemenu,setSideMenu]=useState(false)
 const[data,setData]=useState([])
 const [btnState,setBtnState]=useState("Change Deposit Status")

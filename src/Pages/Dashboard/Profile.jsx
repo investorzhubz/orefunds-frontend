@@ -86,10 +86,11 @@ function Profile() {
                         <>
                             <div className="ppdprofile">
                                 {
-                                    !data.profile ? (
-                                        <img src={profile} alt='profile' />
-                                    ) : (
+                                    data.profile ? (
+                                      
                                         <img src={`${process.env.REACT_APP_IMG_BACKEND_URL}/images/${data.profile}`} alt='profile' />
+                                    ) : (
+                                        <img src={profile} alt='profile' />
                                     )
                                 }
                             </div>

@@ -243,7 +243,7 @@ function RegisterUser() {
         "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
       ];
   return (
-    <div className='reigister-user'>
+    <div className='register-user'>
       <Navigation />
 
         <div className="register-hero">

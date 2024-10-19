@@ -9,7 +9,7 @@ import AdminSidebar from './AdminSideBar';
 import Loader from '../../Component/Loader/Loader'; // Import your Loader component
 
 function FixedDeposits() {
-    const { user } = useAuthContext();
+    const { user , dispatch} = useAuthContext();
     const [sidemenu, setSideMenu] = useState(false);
     const [data, setData] = useState([]);
     const [btnState, setBtnState] = useState("Change Loan Status");
@@ -27,7 +27,13 @@ function FixedDeposits() {
         img: null
     });
     const [loading, setLoading] = useState(true); // Loading state
+    const logout=()=>{
+      dispatch({type:'LOGOUT',payload:null})
+      setTimeout(()=>{
+          navigate('/rf-admin')
 
+      },3000)
+  }
     useEffect(()=>{
 
       axios.get(`${process.env.REACT_APP_BACKEND_URL}/admin/isadmin`,{
@@ -151,7 +157,7 @@ function FixedDeposits() {
                     <div className="user-menu">
                         
                         <p className='logout' onClick={() => {
-                            // logout()
+                            logout()
                         }}>
                             <FaSignOutAlt />Logout
                         </p>

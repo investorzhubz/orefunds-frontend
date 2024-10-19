@@ -9,7 +9,7 @@ import AdminSidebar from './AdminSideBar';
 import Loader from '../../Component/Loader/Loader'; // Import your Loader component
 
 function LoanRequest() {
-    const { user } = useAuthContext();
+    const { user,dispatch } = useAuthContext();
     const [sidemenu, setSideMenu] = useState(false);
     const [data, setData] = useState([]);
     const [btnState, setBtnState] = useState("Change Loan Status");
@@ -27,7 +27,13 @@ function LoanRequest() {
         img: null
     });
     const [loading, setLoading] = useState(true); // Loading state
+    const logout=()=>{
+      dispatch({type:'LOGOUT',payload:null})
+      setTimeout(()=>{
+          navigate('/rf-admin')
 
+      },3000)
+  }
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -145,7 +151,7 @@ function LoanRequest() {
                     <div className="user-menu">
                         
                         <p className='logout' onClick={() => {
-                            // logout()
+                            logout()
                         }}>
                             <FaSignOutAlt />Logout
                         </p>

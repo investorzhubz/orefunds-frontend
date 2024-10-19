@@ -8,6 +8,11 @@
     overflow-x: hidden;
 
 }
+.register-user{
+    box-sizing: border-box !important;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
 
 .register-hero::before{
     content: "";

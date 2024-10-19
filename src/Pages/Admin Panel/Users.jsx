@@ -10,7 +10,7 @@ import Loader from '../../Component/Loader/Loader'; // Import your Loader compon
 import { useNavigate } from 'react-router-dom';
 function Users() {
   const navigate=useNavigate()
-    const { user } = useAuthContext();
+    const { user,dispatch} = useAuthContext();
     const [sidemenu, setSideMenu] = useState(false);
     const [data, setData] = useState([]);
     const [editMode, setEditMode] = useState(false);
@@ -127,6 +127,13 @@ function Users() {
             console.error(error);
         }
     };
+    const logout=()=>{
+      dispatch({type:'LOGOUT',payload:null})
+      setTimeout(()=>{
+          navigate('/rf-admin')
+
+      },3000)
+  }
 
     return (
         <div className='admin dashboard'>
@@ -141,7 +148,9 @@ function Users() {
                 {dashUser && (
                     <div className="user-menu">
                        
-                        <p className='logout' onClick={() => {/* logout logic */}}><FaSignOutAlt />Logout</p>
+                        <p  className='logout'  onClick={() => {
+                            logout()
+                        }}><FaSignOutAlt />Logout</p>
                     </div>
                 )}
             </div>

@@ -10,7 +10,7 @@ import Invoice from '../../Component/Invoice/Invoice'
 
 
 function DepositRequest() {
-const {user}=useAuthContext()
+const {user,dispatch}=useAuthContext()
 const navigate=useNavigate()
 const [sidemenu,setSideMenu]=useState(false)
 const[data,setData]=useState([])
@@ -108,7 +108,13 @@ const handleSubmit=(e)=>{
     })
 
 }
+const logout=()=>{
+  dispatch({type:'LOGOUT',payload:null})
+  setTimeout(()=>{
+      navigate('/rf-admin')
 
+  },3000)
+}
 useEffect(()=>{
 
   axios.get(`${process.env.REACT_APP_BACKEND_URL}/admin/isadmin`,{
@@ -149,7 +155,7 @@ useEffect(()=>{
                         <div className="user-menu">
                             
                             <p className='logout' onClick={()=>{
-                                // logout()
+                                logout()
                             }}><FaSignOutAlt />Logout</p>
                         </div>
                     )

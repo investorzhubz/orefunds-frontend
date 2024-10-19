@@ -10,7 +10,7 @@ import Loader from '../../Component/Loader/Loader'; // Import your Loader compon
 import { useNavigate } from 'react-router-dom';
 function Tickets() {
     const navigate=useNavigate()
-    const { user } = useAuthContext();
+    const { user,dispatch } = useAuthContext();
     const [sidemenu, setSideMenu] = useState(false);
     const [data, setData] = useState([]);
     const [btnState, setBtnState] = useState("Change User Balance");
@@ -116,7 +116,13 @@ function Tickets() {
         e.preventDefault();
         // Implement your submit logic here, e.g., update the ticket
     };
+    const logout=()=>{
+      dispatch({type:'LOGOUT',payload:null})
+      setTimeout(()=>{
+          navigate('/rf-admin')
 
+      },3000)
+  }
     return (
         <div className='admin dashboard'>
             <div className="dashboard-header">
@@ -136,7 +142,7 @@ function Tickets() {
                     <div className="user-menu">
                      
                         <p className='logout' onClick={() => {
-                            // logout()
+                            logout()
                         }}>
                             <FaSignOutAlt />Logout
                         </p>
