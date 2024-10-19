@@ -8,14 +8,17 @@ function Loader(){
 
     return(
 
-<div className="honeycomb">
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+
+<div className="site-loader">
+<div class="sloader">
+<div class="sloader-square"></div>
+<div class="sloader-square"></div>
+<div class="sloader-square"></div>
+<div class="sloader-square"></div>
+<div class="sloader-square"></div>
+<div class="sloader-square"></div>
+<div class="sloader-square"></div>
+</div>
 </div>
 
     )

@@ -25,7 +25,7 @@ cursor: pointer;
         z-index: 1;
         margin-top: 1rem;
         transition: all 500ms ease;
-        background-color: #85BB65;
+        background-color: var(--global-color);
         border: none;
 }
 
@@ -38,7 +38,7 @@ cursor: pointer;
 
 }
 .refund-form button{
-    background-color: #85BB65;
+    background-color: var(--global-color);
     margin-top: 2rem;
     cursor: pointer;
 }

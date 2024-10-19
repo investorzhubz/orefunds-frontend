@@ -159,7 +159,7 @@ function Contact() {
           <input type="text" id="text" name="text" placeholder="Type message"  onChange={(e)=>{
             setMessage(e.target.value)
           }}/>
-          <button style={{backgroundColor:'#85BB65', cursor:'pointer'}} onClick={(e)=>{
+          <button className='contact-form-btn' onClick={(e)=>{
             handleSubmit(e)
           }}>{buttonState}</button>
         </form>

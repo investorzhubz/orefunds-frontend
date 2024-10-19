@@ -38,7 +38,7 @@
       line-height: 1.75rem;
       font-weight: 600;
       text-align: center;
-      color: #85BB65;
+      color: var(--global-color);
       margin-bottom: 1rem;
   
       
@@ -89,7 +89,7 @@
       padding-bottom: 0.75rem;
       padding-left: 1.25rem;
       padding-right: 1.25rem;
-      background-color: #85BB65;
+      background-color: var(--global-color);
       border: none;
       color: #ffffff;
       font-size: 0.875rem;

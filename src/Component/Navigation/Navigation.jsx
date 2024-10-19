@@ -1,11 +1,22 @@
 import React, { useState } from 'react'
 import './navigation.css'
-import logo from '../../resources/images/pnc-logo-rev.svg'
+import logo from '../../resources/images/logo.png'
 import { FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuthContext } from '../../Hooks/useAuthContext';
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const {toggleMenu,setToggleMenu}=useState(false)
+  const {user,dispatch}=useAuthContext()
+  const navigate=useNavigate()
+
+  const logout=()=>{
+    dispatch({type:'LOGOUT',payload:null})
+    localStorage.setItem('user', null);  // stores 'null' as the string "null"
+
+
+       
+}
   return (
     <div className='navbar'>
         <div className='logo'>
@@ -43,16 +54,41 @@ function Navigation() {
             }
             
              </div>
+           <div className="menu-side">
            <div className="mob-menu-items">
            <Link to='/' style={{textDecoration:'none',color:'black'}}><p>Home</p></Link>
            <Link to='/about-us' style={{textDecoration:'none',color:'black'}}><p>About</p></Link>
-           <Link to='/check-refund' style={{textDecoration:'none',color:'black'}}><p>Check Refund</p></Link>
            <Link to='/testimonials' style={{textDecoration:'none',color:'black'}}><p>Testimonials</p></Link>
            <Link to='/privacy-policy' style={{textDecoration:'none',color:'black'}}><p>Privacy Policy</p></Link>
            <Link to='/contact' style={{textDecoration:'none',color:'black'}}><p>Contact</p></Link>
-           
+           {
+                user&&(
+                 <div className="dashbtn">
+                   <Link to='/dashboard'><button className='dashboard-btn'>Dashboard</button></Link>
+                 </div>
+                )
+              }
            </div>
+           <div className='auth-side'>
+           {
+            user?(
+              <div className='loggenin'>
 
+                <button onClick={()=>{
+                  logout()
+                }}>Logout</button>
+
+              </div>
+            ):(
+              <div className='loggedout'>
+ <Link to='/login'><button className='slide-signin'>Sign in</button></Link>
+ <Link to='/register'><button className='slide-signup'>Sign Up</button></Link>
+
+              </div>
+            )
+           }
+           </div>
+           </div>
            </div>
         )
 
@@ -66,17 +102,42 @@ function Navigation() {
               <div className="upper-menu-right-side">
                      <span>
                       <FaEnvelope color='#85BB65'/>
-                      <p>support@pncrefunds.com</p>
+                      <p>support@capitaledgesavings.com</p>
                      </span>
               </div>
             </div>
             <div className="lowermenu">
+            <div className='menu-links'>
             <Link to='/' style={{textDecoration:'none',color:'black'}}><p>Home</p></Link>
            <Link to='/about-us' style={{textDecoration:'none',color:'black'}}><p>About</p></Link>
-           <Link to='/check-refund' style={{textDecoration:'none',color:'black'}}><p>Check Refund</p></Link>
+      
            <Link to='/testimonials' style={{textDecoration:'none',color:'black'}}><p>Testimonials</p></Link>
            <Link to='/privacy-policy' style={{textDecoration:'none',color:'black'}}><p>Privacy Policy</p></Link>
            <Link to='/contact' style={{textDecoration:'none',color:'black'}}><p>Contact</p></Link>
+              {
+                user&&(
+                  <Link to='/dashboard'><button className='dashboard-btn'>Dashboard</button></Link>
+                )
+              }
+            </div>
+
+           {
+            user?(
+              <div className='loggenin'>
+
+                <button  onClick={()=>{
+                  logout()
+                }}>Logout</button>
+
+              </div>
+            ):(
+              <div className='loggedout'>
+  <Link to='/login'><button className='slide-signin'>Sign in</button></Link>
+ <Link to='/register'><button className='slide-signup'>Sign Up</button></Link>
+
+              </div>
+            )
+           }
 
             </div>
         </div>

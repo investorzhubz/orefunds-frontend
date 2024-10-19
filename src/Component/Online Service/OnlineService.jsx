@@ -4,7 +4,7 @@ import { FaMobileAlt, FaPiggyBank, FaShieldAlt, FaHome, FaUniversity, FaCreditCa
 
 function OnlineService() {
   return (
-    <div className="container">
+    <div className="online container">
       <div className="card">
         <FaPiggyBank className="icon" />
         <h3>Digital Banking</h3>

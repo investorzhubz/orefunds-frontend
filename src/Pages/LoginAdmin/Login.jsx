@@ -32,7 +32,7 @@ function Login() {
         setBtnState('Login')
           localStorage.setItem('user',JSON.stringify(json))
           dispatch({type:'LOGIN',payload:json})
-          navigate('/admin')
+          navigate('/admin-panel')
 
        }
         

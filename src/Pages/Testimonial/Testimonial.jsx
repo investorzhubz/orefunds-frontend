@@ -29,7 +29,7 @@ function Testimonial() {
     <div class="customer-testimonials-section">
       <div class="testimonials-introduction">
         <p>
-          At PncBank, we're proud to have built a trusted relationship with our
+          At {process.env.REACT_APP_APP_NAME}, we're proud to have built a trusted relationship with our
           customers over the years. Their success is our success, and we're
           honored to play a role in helping businesses of all sizes achieve
           their financial goals. Don't just take our word for it - hear directly
@@ -43,7 +43,7 @@ function Testimonial() {
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
             I was about to give up on getting a refund from my bank, but then I
-            found PNCBANK. Their team was persistent and knowledgeable, and they
+            found {process.env.REACT_APP_APP_NAME}. Their team was persistent and knowledgeable, and they
             were able to successfully negotiate a refund on my behalf. The money
             I recovered made a real difference for my family.
             <i class="fa fa-quote-right"></i>
@@ -54,7 +54,7 @@ function Testimonial() {
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
             My bank's refund policies are notoriously complex and difficult to
-            navigate. PNCBANK cut through the red tape and got me a refund on
+            navigate. {process.env.REACT_APP_APP_NAME} cut through the red tape and got me a refund on
             some unfair ATM fees in a matter of weeks. I'm grateful for their
             expertise and advocacy.
             <i class="fa fa-quote-right"></i>
@@ -64,7 +64,7 @@ function Testimonial() {
         <div class="customer-container-testimonial">
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
-            As a non-profit organization, every dollar counts for us. PNCBANK
+            As a non-profit organization, every dollar counts for us. {process.env.REACT_APP_APP_NAME}
             helped us recoup over $1,000 in improper fees, which we were then
             able to reinvest into our programs. Their service is a game-changer
             for small and mid-sized organizations like ours.
@@ -77,7 +77,7 @@ function Testimonial() {
         <div class="customer-container-testimonial">
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
-            PNCBANK is a lifesaver for busy professionals like myself. I don't
+            {process.env.REACT_APP_APP_NAME} is a lifesaver for busy professionals like myself. I don't
             have the time or energy to deal with my bank's customer service
             department, but this service handled everything for me. I was able
             to recoup over $300 in just a few weeks."
@@ -89,7 +89,7 @@ function Testimonial() {
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
             As a small business owner, I'm always looking for ways to cut costs
-            and maximize my profits. PNCBANK has helped me do just that by
+            and maximize my profits. {process.env.REACT_APP_APP_NAME} has helped me do just that by
             securing refunds on overdraft fees and other unfair charges from my
             bank. I highly recommend their services
             <i class="fa fa-quote-right"></i>
@@ -99,7 +99,7 @@ function Testimonial() {
         <div class="customer-container-testimonial">
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
-            "I'm so grateful to PNCBANK for their persistence and dedication in
+            "I'm so grateful to {process.env.REACT_APP_APP_NAME} for their persistence and dedication in
             getting me a refund from my bank. They navigated the complex process
             and communicated with me every step of the way. The money I
             recovered made a big difference for my family."
@@ -112,7 +112,7 @@ function Testimonial() {
         <div class="customer-container-testimonial">
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
-            I've used the bank refunds service from PNCBANK multiple times now,
+            I've used the bank refunds service from {process.env.REACT_APP_APP_NAME} multiple times now,
             and I'm always impressed by how quick and easy the process is.
             They've helped me recoup hundreds of dollars in unfair fees, and the
             customer service has been outstanding.
@@ -124,7 +124,7 @@ function Testimonial() {
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
             As a busy entrepreneur, I don't have time to deal with the hassle of
-            navigating bank policies and procedures to get refunds. PNCBANK took
+            navigating bank policies and procedures to get refunds. {process.env.REACT_APP_APP_NAME} took
             care of everything for me, and I was able to get a full refund on
             some unexpected overdraft fees. Highly recommend their services!"
             <i class="fa fa-quote-right"></i>
@@ -134,7 +134,7 @@ function Testimonial() {
         <div class="customer-container-testimonial">
           <p class="refunds-text">
             <i class="fa fa-quote-left"></i>
-            "I'm so grateful to PNCBANK for their persistence and dedication in
+            "I'm so grateful to {process.env.REACT_APP_APP_NAME} for their persistence and dedication in
             getting me a refund from my bank. They navigated the complex process
             and communicated with me every step of the way. The money I
             recovered made a big difference for my family."

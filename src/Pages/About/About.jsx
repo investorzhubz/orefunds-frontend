@@ -5,6 +5,12 @@ import aboutUS from '../../resources/images/about-1 (1).jpg'
 import Footer from '../../Component/Footer/Footer'
 import { Link } from 'react-router-dom'
 import { toast,ToastContainer } from 'react-toastify'
+import aboutImg from '../../resources/images/about-img.png'
+import aboutImg1 from '../../resources/images/about-img-3.png'
+import aboutImg2 from '../../resources/images/about-img-2.png'
+import map from '../../resources/images/world-map.png'
+import { FaBell } from 'react-icons/fa'
+
 function About() {
   const [NLEmail,setNLEmail]=useState(null)
 
@@ -71,7 +77,25 @@ function About() {
         </div>
       </div>
     </div>
+    <div className="notification">
+          <div className="noti-first-section">
+            {/* <FaBell /> */}
+            <span>About Us</span>
+            <h3>Your ally in achieving ambition beyond borders</h3>
+            <p>We understand that with global ambition, comes global challenges, and we are here to bridge the gap by offering seamless cross-border financial services. Consider us your friendly digital guide to all things finance, helping you make the most of your money.
+</p>
+            <div className="check">
+              <p><span>&#10003;</span>Customer Satisfaction</p>
+            </div>
+          </div>
 
+          <div className="ambition-second-section">
+            <img className='img1'src={aboutImg} alt="" />
+            <img className='img2' src={aboutImg1} alt="" />
+            <img className='img3' src={aboutImg2} alt="" />
+          </div>
+          
+        </div>
     <div class="section-about-details">
       <div class="section-about-details-tabs">
         <div class="section-about-details-tabs-icon">
@@ -101,7 +125,24 @@ function About() {
         </div>
       </div>
     </div>
+    <div className="home-account">
+          <span>Our core values</span>
+          <h3>Our values help us set the bar for good banking high.</h3>
+          <p>Our values define us. They guide us in building and improving our product, hiring teammates, and serving our customers.</p>
 
+          <div className="map-img">
+
+      
+             
+              <div>
+                <img src={map} alt="" />
+              </div>
+
+
+          
+          </div>
+
+        </div>
     <div class="section-about-newsletter">
       <div class="about-newsletter header-container">
         <h2>Subscribe to Receive Latest Updates</h2>
