@@ -42,7 +42,7 @@ function Sidebar({ shouldMenuSlide }) {
     <div className={shouldMenuSlide ? 'dashboard-menu slide-in-left' : 'dashboard-menu'}>
       <div className="sidebar">
         <div className="sidebar-header">
-          {data && data.profile === 'null' ? (
+          {data && !data.profile ? (
             <img src={defaultProfile} alt="profile" className="profile-image" />
           ) : (
             <img

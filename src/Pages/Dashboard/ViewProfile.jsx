@@ -147,7 +147,7 @@ function ViewProfile() {
                         <>
                             <div className="ppdprofile">
                                 {/* Profile Image */}
-                                {data.profile === 'null' ? (
+                                {!data.profile ? (
                                     <img src={profile} alt="profile" />
                                 ) : (
                                     <img
