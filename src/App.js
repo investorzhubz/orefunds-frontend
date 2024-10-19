@@ -88,8 +88,9 @@ function App() {
   }, [location.pathname, user]);
 
   useEffect(()=>{
-    console.log(location.pathname)
-   if(location.pathname!=='/'&&location.pathname!=='/home'&&location.pathname!=='/about-us'&&location.pathname!=='/testimonials'&&location.pathname!=='/privacy-policy'&&location.pathname!=='/contact'){
+    if(user){
+      console.log(location.pathname)
+   if(location.pathname!=='/'&&location.pathname!=='/home'&&location.pathname!=='/about-us'&&location.pathname!=='/testimonials'&&location.pathname!=='/privacy-policy'&&location.pathname!=='/contact'&&location.pathname!=='/login'){
     axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/check-emailverified`,{
       headers:{
           Authorization:`Bearer ${user?.token}`
@@ -105,6 +106,7 @@ function App() {
      
   })
    }
+    }
 
 },[location.pathname])
   return (
