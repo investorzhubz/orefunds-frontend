@@ -61,7 +61,12 @@ function ResetPassword() {
           console.log("in bad response")
           setBtnState("Reset Password")
          
-              toast.error(error.response.data.error)
+          if(error.response.data.error==undefined){
+            toast.error("An Error Occured")
+
+          }else{
+            toast.error(error.response.data.error)
+          }
   
     
         })
