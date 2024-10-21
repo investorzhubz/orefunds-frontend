@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useAuthContext } from '../../Hooks/useAuthContext'
-import { toast } from 'react-toastify'
+import { toast } from 'wc-toast'
 
 function VerifyEmail() {
 

@@ -8,7 +8,7 @@ import Sidebar from './Sidebar';
 import { useDropzone } from 'react-dropzone';
 import Confirmation from './Confirmation';
 import axios from 'axios';
-import { toast } from 'react-toastify';
+import { toast } from 'wc-toast';
 import { useAuthContext } from '../../Hooks/useAuthContext';
 import { Link, useNavigate } from 'react-router-dom';
 function DPSPlans() {

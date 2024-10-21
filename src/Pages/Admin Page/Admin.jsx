@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './admin.css'
 import { useAuthContext } from '../../Hooks/useAuthContext'
-import {ToastContainer,toast} from 'react-toastify'
+import {ToastContainer,toast} from 'wc-toast'
 import { Link } from 'react-router-dom'
 
 

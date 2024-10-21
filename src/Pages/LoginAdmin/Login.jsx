@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './login.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { useLogin } from '../../Hooks/useLogin'
-import { ToastContainer,toast } from 'react-toastify'
+import { ToastContainer,toast } from 'wc-toast'
 import { useAuthContext } from '../../Hooks/useAuthContext'
 
 function Login() {

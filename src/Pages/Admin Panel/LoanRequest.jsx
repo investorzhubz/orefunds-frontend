@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuthContext } from '../../Hooks/useAuthContext';
 import axios from 'axios';
 import { FaAlignLeft, FaSignOutAlt, FaTimes, FaUserAlt } from 'react-icons/fa';
-import { toast } from 'react-toastify';
+import { toast } from 'wc-toast';
 import AdminConfirm from './AdminConfirm';
 import { Link, useNavigate } from 'react-router-dom';
 import AdminSidebar from './AdminSideBar';

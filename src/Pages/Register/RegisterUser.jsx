@@ -3,7 +3,7 @@ import './registeruser.css'
 import registerHero from '../../resources/images/register.jpg'
 import { FaUser } from 'react-icons/fa'
 import axios from 'axios'
-import { toast,ToastContainer } from 'react-toastify'
+import { toast,ToastContainer } from 'wc-toast'
 import { useAuthContext } from '../../Hooks/useAuthContext'
 import { useNavigate } from 'react-router-dom'
 import Navigation from '../../Component/Navigation/Navigation'
@@ -17,6 +17,7 @@ function RegisterUser() {
     const [onlineRegistration,setOnlineRegistration]=useState(true)
     const [strengthMessage, setStrengthMessage] = useState('');
     const [passwordMatch,setPasswordMatch]=useState('')
+    const [btnState,setBtnState]=useState("Submit")
     const [emailSent, setEmailSent] = useState(false);
     const [terms,setTerms]=useState(false)
     const navigate=useNavigate()
@@ -142,6 +143,7 @@ function RegisterUser() {
   const handleSubmit=(e)=>{
     console.log("Submit")
     e.preventDefault()
+    setBtnState("Processing...")
 
     console.log(formData)
   if(passwordMatch=='Match'){
@@ -152,7 +154,9 @@ function RegisterUser() {
           dispatch({type:'LOGIN',payload:response.data})
         setRegister(false)
         setCompleted(true)
+        setBtnState("Submit")
     }).catch(error=>{
+      setBtnState("Submit")
         console.log(error.response)
 
         toast.error(error.response.data.error)
@@ -644,7 +648,17 @@ function RegisterUser() {
         </div>
 
         <div className="registerform-btn">
-          <button type="submit">Submit</button>
+        {
+          btnState=='Submit'&&(
+            <button type="submit" className="send-money-send-btn">{btnState}</button>
+          )
+        }
+
+        {
+          btnState=='Processing...'&&(
+            <button type="submit"  disabled className="send-money-send-btn">{btnState}</button>
+          )
+        }
           <button type="reset" onClick={() => setFormData({
             firstname: '',
             lastname: '',

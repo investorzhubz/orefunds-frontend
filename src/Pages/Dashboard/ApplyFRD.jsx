@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
 import { useAuthContext } from '../../Hooks/useAuthContext';
-import { toast } from 'react-toastify';
+import { toast } from 'wc-toast';
 import { Link } from 'react-router-dom';
 
 function ApplyFRD() {

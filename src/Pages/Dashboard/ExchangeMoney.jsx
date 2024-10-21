@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FaAlignLeft, FaSignOutAlt, FaUserAlt } from 'react-icons/fa';
 import Sidebar from './Sidebar';
 import axios from 'axios';
-import { toast } from 'react-toastify';
+import { toast } from 'wc-toast';
 import { useAuthContext } from '../../Hooks/useAuthContext';
 import { Link } from 'react-router-dom';
 function ExchangeMoney() {

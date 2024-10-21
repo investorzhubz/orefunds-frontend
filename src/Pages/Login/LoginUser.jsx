@@ -3,7 +3,7 @@ import './loginuser.css'
 import {FaUser, FaEye,FaEyeSlash} from 'react-icons/fa'
 import {useAuthContext}from '../../Hooks/useAuthContext'
 import { Link, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast } from 'wc-toast';
 import axios from 'axios'
 import Navigation from '../../Component/Navigation/Navigation';
 

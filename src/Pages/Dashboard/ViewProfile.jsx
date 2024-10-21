@@ -3,7 +3,7 @@ import axios from 'axios';
 import profile from '../../resources/images/default.png';
 import { FaAlignLeft, FaPencilAlt, FaSignOutAlt, FaUserAlt } from 'react-icons/fa';
 import { useAuthContext } from '../../Hooks/useAuthContext';
-import { toast } from 'react-toastify';
+import { toast } from 'wc-toast';
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Loader from '../../Component/Loader/Loader'; // Import your Loader component
