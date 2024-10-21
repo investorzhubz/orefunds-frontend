@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './login.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { useLogin } from '../../Hooks/useLogin'
-import { ToastContainer,toast } from 'wc-toast'
+import { toast } from 'wc-toast'
 import { useAuthContext } from '../../Hooks/useAuthContext'
 
 function Login() {
@@ -41,7 +41,7 @@ function Login() {
 
   return (
     <div className="signup">
-      <ToastContainer />
+      {/* <ToastContainer /> */}
       <div className="signfrom">
       <div className="signav" style={{position:'relative' ,zIndex:'999'}}>
        

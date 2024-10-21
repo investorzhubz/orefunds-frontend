@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './testimonial.css'
 import Navigation from '../../Component/Navigation/Navigation'
 import Footer from '../../Component/Footer/Footer'
-import { toast,ToastContainer } from 'wc-toast'
+import { toast} from 'wc-toast'
 function Testimonial() {
   const [NLEmail,setNLEmail]=useState(null)
 
@@ -17,7 +17,7 @@ function Testimonial() {
   }
   return (
     <div className='testimonial about'>
-      <ToastContainer/>
+      {/* <ToastContainer/> */}
         <Navigation />
         <div class="about-header">
       <div class="header-container">

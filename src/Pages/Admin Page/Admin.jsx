@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './admin.css'
 import { useAuthContext } from '../../Hooks/useAuthContext'
-import {ToastContainer,toast} from 'wc-toast'
+import {toast} from 'wc-toast'
 import { Link } from 'react-router-dom'
 
 
@@ -81,7 +81,7 @@ function Admin() {
 
   return (
     <div classname='admin'>
-        <ToastContainer />
+        {/* <ToastContainer /> */}
 
         <div className='admin-tabs'>
         <p className={allRefund?'active-tab':''} onClick={()=>{

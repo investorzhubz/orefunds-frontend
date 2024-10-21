@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import './admin.css'
 import { useAuthContext } from '../../Hooks/useAuthContext'
-import {ToastContainer,toast} from 'wc-toast'
+import {toast} from 'wc-toast'
 function EditRefund() {
     const {user} =useAuthContext()
     const [allRefund,setAllRefunds]=useState(true)
@@ -83,7 +83,7 @@ function EditRefund() {
   return (
     <div>
         <div className="refund-form">
-            <ToastContainer />
+            {/* <ToastContainer /> */}
                     <h2>Edit Client's Details</h2>
                       <div className="refundNumber">
                       <input type="text" name='refund' placeholder='Enter Refund Number'  onChange={(e)=>{

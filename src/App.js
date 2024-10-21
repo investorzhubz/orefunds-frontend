@@ -48,7 +48,7 @@ import GiftCard from './Pages/Admin Panel/GiftCard';
 import FixedDeposits from './Pages/Admin Panel/FixedDeposits';
 import Invoice from './Component/Invoice/Invoice';
 import TransactionsHistory from './Pages/Dashboard/TransactionsHistory';
-
+import { toast } from 'wc-toast';
 function App() {
   const { user,dispatch } = useAuthContext();
   const location = useLocation();
@@ -111,7 +111,10 @@ function App() {
 },[location.pathname])
   return (
     <div className="App">
-      <ToastContainer />
+       <wc-toast />
+      {/* <ToastContainer /> */}
+      
+
       {/* Your ScrollToTop component if needed */}
       <Routes>
         <Route path="/" element={<Home />} />

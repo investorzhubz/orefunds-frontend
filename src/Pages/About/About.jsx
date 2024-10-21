@@ -4,7 +4,7 @@ import Navigation from '../../Component/Navigation/Navigation'
 import aboutUS from '../../resources/images/about-1 (1).jpg'
 import Footer from '../../Component/Footer/Footer'
 import { Link } from 'react-router-dom'
-import { toast,ToastContainer } from 'wc-toast'
+import { toast} from 'wc-toast'
 import aboutImg from '../../resources/images/about-img.png'
 import aboutImg1 from '../../resources/images/about-img-3.png'
 import aboutImg2 from '../../resources/images/about-img-2.png'
@@ -25,7 +25,7 @@ function About() {
   }
   return (
     <div className='about'>
-    <ToastContainer/>
+    {/* <ToastContainer/> */}
         <Navigation/>
          <div class="about-header">
       <div class="header-container">
