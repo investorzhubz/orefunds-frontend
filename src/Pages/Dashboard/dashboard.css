@@ -1,0 +1,734 @@
+.dashboard{
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
+}
+.admin-menu-head{
+  box-sizing: border-box;
+    overflow-x: hidden;
+}
+.dashboard-menu {
+  position:fixed; /* This makes it fixed to the viewport, so it scrolls with the page */
+  z-index: 1;
+  top: 0;
+  
+  
+}
+
+
+
+
+.send-money-send-btn{
+  background-color: var(--global-color);
+}
+.user-menu{
+  position: absolute;
+  top: 0;
+  margin-right: 0rem;
+  right: 0;
+  margin-top: 3rem;
+  background-color: white;
+  color: #6e6e6e;
+  padding: 1rem 2rem;
+  z-index: 99;
+
+}
+.user-menu p{
+  font-weight: 500;
+  margin-top: .5rem;
+  font-size: 14px;
+
+}
+.logout{
+  color: red;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+.deposits-form{
+  margin-top: 3rem;
+}
+.cancel-depo{
+  margin: 1rem 0;
+}
+.dashboard-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--global-color);
+    padding: 1rem 1rem;
+    color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 1px solid white;
+}
+.admin .dashboard-header{
+  background-color: #092b49;
+}
+
+.dashboard .rights-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dashboard .rights-side p{
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+.dashboard .rights-side svg{
+    margin-left: 1rem;
+   
+}
+.left-side{
+  position: relative;
+  
+}
+.dashboard .left-side{
+    cursor: pointer;
+}
+.dashboard-main-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.dashboard-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 1rem;
+}
+.card-body{
+    margin-top: 1rem;
+ width: 100%;
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1.25rem 1.6rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+       
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 0.25rem;
+        border: none;
+        -webkit-box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+        box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+
+}
+
+.card-body p{
+    margin-top: 1rem;
+    font-size: 16px;
+}
+.card-body span{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size:15px;
+    color: rgb(85, 85, 85);
+}
+.balances{
+    display: flex;
+}
+.balances .card-body{
+    margin-right: 1rem;
+}
+
+.activities{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.activities .card-body{
+    margin-right: 1rem;
+}
+
+.activities .card-body h3{
+    font-weight: 400;
+    font-size:14px;
+    margin-top: .2rem;
+    cursor: pointer;
+    
+}
+
+.activit1{
+    background-color:#18A2B8;
+    color: #fff;
+}
+.activit2{
+    color: #fff;
+    background-color: #DB3646;
+}
+.activit3{
+    color: #fff;
+    background-color: #29A746;
+}
+.activit4{
+    color: #fff;
+    background-color: #18A2B8;
+}
+
+.loan-container {
+   width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .loan-table{
+   
+    overflow-x: scroll;
+    
+}
+.equal-table {
+  width: 100%; /* Make table take full width */
+ 
+ 
+}
+
+.equal-table th,
+.equal-table td {
+  width: fit-content; /* Each column takes up one-third of the table */
+  
+  text-align: center;
+  border: 1px solid #000;
+  overflow: hidden; /* Prevent content overflow */
+  text-overflow: ellipsis; /* Adds '...' when content overflows */
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.loan-table thead tr{
+
+  width: fit-content;
+}
+
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .loan-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  
+  .loan-table th, 
+  .loan-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .loan-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .loan-table td {
+    background-color: #fff;
+  }
+  
+  .loan-table .no-loan-message {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .pay-button {
+    background-color: var(--global-color);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #056905;
+  }
+  
+  .dashboard-navhead img{
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ebebeb;
+    padding: .2rem;
+
+  }
+  .dashboard-navhead p{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .sidebar {
+  margin-top: 3.7rem; /* Adjusts the top margin if needed */
+  background-color: #f7f9fc;
+  height: calc(100vh - 3.7rem);
+  max-height: 200vh;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Allows internal scrolling if the content exceeds container height */
+  width: 250px; /* Set a width if you haven't done so */
+
+  }
+ 
+  .sidebar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .sidebar-navigation {
+    margin-top: 20px;
+  }
+  
+  .sidebar-navigation ul {
+    list-style-type: none;
+    padding: 0;
+   
+  }
+  .sidebar-dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-with-drop{
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: start;
+    width: 100%;
+  } 
+  .nav-item{
+    display: flex;
+    align-items: center;
+  }
+  .nav-item svg:last-child{
+    color: #6e6e6e;
+    margin-left: .2rem;
+    font-size: 12px;
+  }
+  .sidebar-dropdown{
+    margin-left: 2rem;
+    font-size: 12px;
+    align-items: start;
+    
+  }
+  .sidebar-dropdown span{
+    margin-top: 1rem;
+  }
+
+  .sidebar-dropdown span:hover{
+    color: red
+  }
+  .sidebar-navigation li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #6e6e6e;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.048);
+    
+  }
+  .sidebar-navigation svg{
+    margin-right: 1rem;
+    color: #000;
+  }
+  
+  .sidebar-navigation li p:hover {
+    color: var(--global-color); /* Use your global color */
+  }
+  
+  .sidebar-navigation i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .table-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .table-head button{
+    background-color: var(--global-color);
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+  }
+  .table-head svg{
+    vertical-align: center;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    margin-right: .5rem;
+  }
+  .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  .dps{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .dashboard button:hover{
+    background-color: white;
+    color: var(--global-color);
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--global-color);
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 8px 8px 0 0;
+  }
+  .dps .card-body {
+    margin-top: 1rem;
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem .6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    border: none;
+    box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+}
+  
+  .plan-name {
+    font-weight: bold;
+  }
+  
+  .plan-rate {
+    font-size: 1.2rem;
+  }
+  .dps .card-body span {
+    margin-top: 0;
+  font-weight: 600;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+}
+  
+  .card-body {
+    margin-top: 20px;
+  }
+  
+  .plan-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-size: 13px;
+  }
+  
+  .detail-value {
+    font-weight: bold;
+  }
+  
+  .check-icon {
+    margin-right: 5px;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .apply-now-btn {
+    background-color: var(--global-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .apply-now-btn:hover {
+    background-color: #092b49;
+  }
+   /*........................ student details.................... */
+.pprofiledetails{
+  background-color: #fff;
+  padding-bottom: 4rem;
+  
+}
+
+.pprofiledetails h4{
+  margin-bottom: 1rem;
+  font-size: 20px;
+  margin-top: 4rem;
+  padding-left: 2rem;
+
+}
+.pddetails{
+  background-color:#fff;
+  display: flex;
+  flex-direction: column;
+   justify-content: start;
+   font-family: var(--font-family);
+   margin: 0 2rem;
+}
+.ppdetail{
+display: flex;
+margin: 1rem 0;
+flex-direction: column;
+background-color: #F6F6F6;
+border-radius: 10px;
+padding: 0.5rem 1rem;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  
+}
+.ppdetail p{
+  margin-bottom: 0 !important;
+  font-size:13px;
+  color: #afafaf;
+}
+.ppdetail span{
+  font-size: 15px;
+}
+.ppdprofile{
+  position: relative;
+  background-color: var(--global-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0;
+}
+.edit-profile{
+  position: absolute;
+ bottom: 0;
+ margin-top: 20rem;
+ cursor: pointer;
+
+border-radius: 50px;
+background-color: var(--global-color);
+height: 30px;
+width: 30px;
+font-size: 15px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+.ppdprofile img{
+  
+  height: 150px;
+  width:150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-bottom: -9.5rem;
+ 
+
+}
+
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+
+    
+
+    .dps{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+ 
+    
+  }
+  
+ 
+  @media screen and (max-width:768px){
+  
+    .activities {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .loan-container {
+        width: 100%;
+        padding: 8px;
+     
+    }
+    .dashboard-main {
+       margin: 0;
+    }
+    .balances .card-body {
+        margin-right: .5rem;
+    }
+    .card-body p {
+        margin-top: .5rem;
+        font-size: 14px;
+    }
+    .card-body span {
+        margin-top: .5rem;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .card-body { 
+        padding: 1rem .5rem;   
+    }
+    .activities .card-body {
+        width: 90%;
+        margin: .5rem 0;
+       
+    }
+    .loan-table table{
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+      .loan-table th, .loan-table td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    .loan-table th {
+        font-size: 12px;
+    }
+    .loan-table td {
+        font-size: 11px;
+    }
+    .dps{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+ 
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+        color: #333;
+    }
+    .pay-button {
+        background-color: var(--global-color);
+        color: #fff;
+        border: none;
+        padding: 4px 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 10px;
+        line-height: 15px;
+        transition: background-color 0.3s ease;
+    }
+    .dashboard-main-section {
+      
+        align-items: start;
+    }
+
+ 
+
+  .sidebar {
+
+    height: 100vh;
+    background-color: #f7f9fc;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+ 
+}
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-9-27 8:18:32
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }

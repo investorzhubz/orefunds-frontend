@@ -1,0 +1,69 @@
+/* ----------------------------tESTIMONIAKLS----------------------------------------- */
+.testimonials-introduction {
+        width: 80%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+      .testimonials-introduction p {
+        text-align: start;
+
+      }
+      
+      .customer-testimonials-row {
+        display: flex;
+        margin-bottom: 5rem;
+      }
+      
+      .customer-testimonials-row p {
+        text-align: center;
+      }
+      .refunds-text {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+      }
+      
+      .customer-testimonials-row p:nth-child(2) {
+        font-style: italic;
+      }
+      .map-img img{
+        object-fit: contain;
+        margin-top: 2rem;
+        height: 500px;
+        
+      }
+      
+      .customer-container-testimonial {
+        background-color: white;
+        margin: 0 2rem;
+        padding: 4rem;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+         /* ------------------------------------Testimonials-------------------------------------- */
+  
+    .customer-container-testimonial {
+        background-color: white;
+        margin: 0 1rem;
+        padding: 2rem 0.7rem;
+        margin-bottom: 2rem;
+      }
+    
+      .refunds-text {
+        font-size: 0.8rem;
+      }
+      .customer-testimonials-row p:nth-child(2) {
+        font-style: italic;
+        font-size: 0.9rem;
+      }
+      .customer-testimonials-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.1rem;
+      }
+    
+    

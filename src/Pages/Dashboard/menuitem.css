@@ -1,0 +1,205 @@
+.send-money-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+    font-size: 14px;
+}
+.send-money-form h2{
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.178);
+    font-weight: 400;
+    
+}
+
+.send-money-form{
+    padding: 2rem 1rem;
+    height:fit-content;
+
+    width: 80%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+    background-color: rgb(252, 252, 252);
+}
+.send-money-grid{
+    display: flex;
+}
+.send-money-grid .send-money-form-group:first-child{
+
+    margin-right: 1rem;
+    
+}
+.image-profile{
+    display: none;
+}
+methods{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 20px; /* space between grid items */
+    font-size: 10px !important;
+}
+
+.methods img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+   
+    object-fit: cover;
+   
+}
+.methods .card-body span{
+    font-size: 13px;
+    font-weight: 500;
+}
+ 
+.methods .card-body button{
+    margin-top: 1rem;
+    background-color: var(--global-color);
+}
+
+.send-money-form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.send-money-form-group span{
+    color: red;
+}
+
+.send-money-form-group textarea::placeholder{
+    font-size: 13px;
+}
+.send-money-transaction-fee{
+    font-size: 13px;
+    color: var(--global-color);
+}
+
+.send-money-form-group textarea{
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.send-money-container button{
+  margin-top: 2rem;
+  width: 100%;
+  background-color: var(--global-color);
+  font-size: 15px;
+}
+
+.send-money-form-group{
+    font-size: 13px;
+    color: grey;
+}
+.send-money-form-group input::placeholder{
+    font-size: 13px;
+}
+.send-money-form-group select{
+    font-size: 13px;
+}
+
+.send-money-form-group input:focus{
+    outline: none; /* Removes the default outline */
+    border-color: #555555; /* Changes the border color */
+
+ 
+
+}
+.auto-depo h2{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+}
+.action-tb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loan-table button{
+
+    font-size: 10px;
+    padding: .2rem .5rem;
+    margin-right: 1rem;
+
+    
+}
+.loan-table button:first-child{
+    background-color: var(--global-color);
+}
+.loan-table button:last-child{
+    background-color: red;
+}
+
+.auto-depo p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.cancel-depo{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: .3rem 1rem;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.deposits-form{
+    margin-bottom: 2rem;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.336);
+    height: 100vh !important; 
+    overflow-y: auto;
+}
+
+.dropzone {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .dropzone-active {
+    background-color: #e0f7fa;
+  }
+  .left-side svg{
+    cursor: pointer;
+
+  }
+
+@media screen and (max-width:768px){
+    .send-money-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100VH;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .send-money-form {
+
+        width: 98%;
+  
+    }
+    .send-money-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .send-money-form-group {
+        font-size: 13px;
+        color: grey;
+    }
+}

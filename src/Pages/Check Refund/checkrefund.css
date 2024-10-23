@@ -1,0 +1,175 @@
+.check-refunds{
+    box-sizing: border-box !important;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.check-refund-hero{
+    
+    background: url('../../resources/images/service-bg\ \(1\).jpg');
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.check-refund-hero h2{
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+    
+}
+.check-refund-hero span{
+    color: white;
+    font-weight: 600;
+
+    z-index: 1;
+}
+.check-refund-hero::before{
+    position: absolute;
+    content: '';
+    background: #000000b9;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+.refundcheckform{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:2rem 4rem;
+
+}
+
+.refundcheckform input{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    padding: 18px 35px;
+    z-index: 1;
+    width:50%  !important;
+    margin:0 !important;
+    
+        transition: all 500ms ease;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    
+}
+.view-refund input:focus {
+    outline: none;
+}
+.loader{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   background-color: #00ca00;
+   top:0;
+   left: 0;
+    width: 100%; 
+    height: 100%;
+   z-index: 99999;
+   
+
+}
+.refundcheckform button{
+    background-color:green;
+    cursor:pointer;
+}
+.view-refund{
+    display:flex;
+    padding: 2rem 2rem;
+    flex-direction: column;
+}
+.view-refund label{
+    font-size: 13px;
+    font-weight: 800;
+}
+.view-refund div{
+   
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.view-refund input{
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1rem;
+    background-color: rgba(201, 201, 201, 0.096);
+    text-align: start;
+    margin: 0 !important;
+}
+.refundcheckform input::placeholder{
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 768px) {
+    .refundcheckform {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0rem;
+    }
+    .view-refund div{
+        margin-top: 1.5rem;
+    }
+    .view-refund input{
+        padding: 0.7 0.7rem;
+    }
+    .view-refund label{
+        margin-bottom: 1rem;
+  
+     
+       
+    }
+    .refundcheckform input{
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #000;
+        text-align: center;
+        padding: 15px 5px;
+        z-index: 1;
+        width:50%;
+        
+            transition: all 500ms ease;
+        border: none;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        
+    }
+    .refundcheckform button {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        padding: 15px 3px;
+        z-index: 1;
+        transition: all 500ms ease;
+        border: none;
+
+    }
+}

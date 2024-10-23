@@ -1,0 +1,496 @@
+.register-hero{
+    height: 70vh;
+    width: 100%;
+    background-image: url("../../resources/images/register.jpg");
+    object-fit:fill;
+    background-position: center center;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+.register-user{
+    box-sizing: border-box !important;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.register-hero::before{
+    content: "";
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.116);
+    height: 70vh;
+   display: block;
+}
+.register-hero-text{
+    margin-top: -15rem;
+    background-color: white;
+    width: 450px;
+    padding: 2rem 1rem;
+    margin-left: 1rem;
+}
+.register-hero-text p{
+    color: var(--global-color);
+    font-weight: 700;
+    font-size: 40px;
+
+}
+.register-steps{
+    background-color: var(--global-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    flex: 1;
+}
+.active-step{
+    flex: 1;
+    color: var(--global-color);
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.not-active{
+    flex: 1;
+    text-align: center;
+}
+
+.register-steps p{
+    cursor: pointer;
+}
+
+.register-data{
+    padding: 2rem 4rem;
+    max-height: 500px;
+}
+
+.register-data .get-started h4{
+    font-size: 30px;
+    padding: 1rem 0;
+    color: var(--global-color);
+    
+}
+
+.register-data .get-started p{
+
+    font-size: 15px;
+    padding: 1rem 0;
+    
+}
+
+.register-data .get-started button{
+ cursor: pointer;
+   background-color: var(--global-color);
+}
+
+.notice{
+
+        box-shadow: 0 4px 15px 0 rgba(31, 43, 58, 0.1);
+        border: none;
+        border-left: 4px solid transparent;
+        color: #526484;
+        line-height: 1.5;
+        background: #fff;
+        border-color:var(--global-color);
+        position: relative;
+        padding: 1rem 1.25rem;
+        border-radius: 4px;
+        margin-bottom: 1rem;    
+        font-size: 15px;   
+}
+.terms-conditions h4{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 30px;
+    padding: 1rem 0;
+    color: var(--global-color);
+}
+
+
+.terms-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  
+  .terms-container p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .terms-container h2 {
+    font-size: 20px;
+    color: #056905c2; /* Using your global color */
+    margin-top: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .terms-container ul {
+    padding-left: 20px;
+    list-style: disc;
+  }
+  
+  .terms-container li {
+    margin-bottom: 8px;
+  }
+  
+  .terms-container strong {
+    color: #056905c2; /* Using your global color */
+  }
+  
+  .terms-container a {
+    color: #056905c2;
+    text-decoration: none;
+  }
+  
+  .terms-container a:hover {
+    text-decoration: underline;
+  }
+  .terms-button{
+    padding: 2rem 0;
+  }
+  .terms-button button{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+
+
+  }
+
+  .terms-button button:first-child{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(238, 2, 2);
+    padding: 1rem 2rem;
+    
+
+  }
+  .terms-button button:last-child{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    background-color:var(--global-color);
+    padding: 1rem 2rem;
+    
+
+  }
+
+
+
+/* Register container */
+.register {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1000px;
+
+    font-size: 14px !important;
+
+    border-radius: 8px;
+
+}
+
+/* Register head */
+.register-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+    
+}
+.register-head svg {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color:var(--global-color);
+}
+
+.register-head p {
+    margin-left: 15px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Form styling */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Section headings */
+.register h4 {
+    color: var(--global-color);
+    border-bottom: 2px solid var(--global-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+/* .register label {
+    display: block;
+    margin-bottom: 0.2rem;
+   
+    color: #555;
+    margin-top: 1rem;
+    font-size: 15px !important;
+} */
+
+/* Input fields */
+
+.address {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* space between grid items */
+}
+.employment-details{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+.banking-details{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+.name {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    
+}
+
+.register select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+
+/* Grouping inputs */
+.state-city-zipcode,
+.dob-house,
+.phone-email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.state-city-zipcode div,
+.dob-house div,
+.phone-email div {
+    width: 32%;
+}
+
+/* Employment and banking info sections */
+.employment-info,
+.banking-info {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.registerform-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register button {
+    cursor: pointer;
+    margin-right: 1rem;
+    padding: 1rem 3rem ;
+}
+.register button:first-child{
+    background-color: var(--global-color);
+}
+
+.register button:last-child{
+    background-color: red;
+}
+
+button:hover {
+    /* background-color: #0056b3; */
+    transform: translateY(-1px);
+}
+
+/* Reset button */
+button[type="reset"] {
+    background-color: #6c757d;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+}
+
+
+.email-verification-panel {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .email-verification-panel h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .email-verification-panel p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .resend-btn {
+    background-color: #056905c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .resend-btn:hover {
+    background-color: #045e04;
+  }
+  
+  .confirmation-message {
+    margin-top: 15px;
+    color: #28a745;
+    font-size: 14px;
+  }
+  
+
+
+
+@media screen and (max-width:768px){
+    button {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        padding: 14px 30px;
+
+        transition: all 500ms ease;
+        border: none;
+    }
+    .notice {
+        
+        font-size: 14px;
+    }
+    .register-head p {
+       font-size: 14px;
+    }
+    .terms-conditions h4 {
+    
+        font-size: 25px;
+       
+    }
+    .terms-container p {
+     
+        font-size: 14px;
+    
+    }
+    .register-data {
+        padding: 1rem 1rem !important;
+        max-height: 500px;
+    }
+    .register-data .get-started h4 {
+        font-size: 25px;
+        padding: 1rem 0;
+        color: var(--global-color);
+        
+    }
+
+    .register-hero-text{
+        margin-top: -14rem;
+        background-color: white;
+        width: 350px;
+        padding: 1.5rem .5rem;
+        margin-left: 0rem;
+       
+    }
+    .register-hero-text p{
+        color: var(--global-color);
+        font-weight: 700;
+        font-size: 30px;
+    
+    }
+    .register-steps p{
+        font-size: 10px;
+    }
+    .register-data{
+        padding: 1rem 4rem;
+        /* max-height: 500px; */
+    }
+    .address {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 columns */
+        gap: 20px; /* space between grid items */
+    }
+    .employment-details{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+    }
+    .banking-details{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+    }
+    .name {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+    }
+}

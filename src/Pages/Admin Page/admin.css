@@ -1,0 +1,110 @@
+.admin-tabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.admin-tabs p{
+    width: 100%;
+text-align: center;
+padding: 0.7rem 0.5rem;
+cursor: pointer;
+}
+
+.admin-tabs .active-tab{
+    position: relative;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #fff !important;
+        text-align: center;
+        padding: 18px 35px;
+        z-index: 1;
+        margin-top: 1rem;
+        transition: all 500ms ease;
+        background-color: var(--global-color);
+        border: none;
+}
+
+.refund-form{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    background-color: #ececec;
+    min-height: 100vh;
+
+}
+.refund-form button{
+    background-color: var(--global-color);
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.refund-form input{
+    background-color: #fff;
+      padding: 1rem;
+      padding-right: 3rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      margin-top: 2rem;
+      border: none;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+     
+}
+.refundNumber{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding: 1rem 0;
+}
+.refundNumber input{
+    width: 50%;
+}
+.refundNumber input::placeholder{
+
+    text-align: center;
+    
+}
+
+.all-refund{
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh;
+
+}
+.refund-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    
+  
+}
+
+@media (max-width: 768px) {
+    .refund-form {
+   
+        padding: 2rem 1rem;
+        
+    }
+    .refundNumber input {
+        width: 70%;
+        
+    }
+    .refund-data {
+       
+        margin: 1rem 1rem;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 1rem 0.5rem;
+    }
+}
