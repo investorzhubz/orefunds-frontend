@@ -10,6 +10,7 @@ function VerifyEmail() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const token = params.get('token');
+  
 
   useEffect(() => {
     if (token) {
