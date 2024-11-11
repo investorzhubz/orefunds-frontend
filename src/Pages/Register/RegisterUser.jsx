@@ -13,7 +13,7 @@ import Navigation from '../../Component/Navigation/Navigation'
 // {process.env.REACT_APP_APP_NAME}
 
 function RegisterUser() {
-
+    const [resend,setResend]=useState('Resend Verification Email')
     const [onlineRegistration,setOnlineRegistration]=useState(true)
     const [strengthMessage, setStrengthMessage] = useState('');
     const [passwordMatch,setPasswordMatch]=useState('')
@@ -68,15 +68,19 @@ function RegisterUser() {
 
     const handleResendVerfificationEmail = () => {
         // Simulate email resend action
+        setResend("Resending. Please wait")
 
         axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/resend-eamil-verification`,{
             headers:{
                 Authorization:`Bearer ${user?.token}`
             }
         }).then(response=>{
+          setResend('Resend Verification Email')
             setEmailSent(true);
             toast.success('Verification Email Sent')
         }).catch(error=>{
+          toast.error(error.response.data)
+          setResend('Resend Verification Email')
             console.log(error.response)
     
            
@@ -690,9 +694,20 @@ function RegisterUser() {
             <div className="email-verification-panel">
       <h2>Email Verification Required</h2>
       <p>Please verify your email to Continue.</p>
-      <button onClick={handleResendVerfificationEmail} className="resend-btn">
-        Resend Verification Email
-      </button>
+      {
+        resend=='Resend Verification Email'&&(
+          <button  onClick={handleResendVerfificationEmail} className="resend-btn">{resend}</button>
+
+        )
+      }
+      {
+        resend=='Resending. Please wait'&&(
+          <button  onClick={handleResendVerfificationEmail} className="resend-btn">
+          {resend}
+        </button>
+        )
+      }
+      
       {emailSent && <p className="confirmation-message">Verification email sent!</p>}
     </div>
         )
