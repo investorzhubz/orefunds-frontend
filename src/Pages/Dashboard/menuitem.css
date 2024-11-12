@@ -44,9 +44,8 @@ methods{
     height: 50px;
     width: 50px;
     border-radius: 50px;
-   
-    object-fit: cover;
-   
+    object-fit: contain;
+    object-position: center; 
 }
 .methods .card-body span{
     font-size: 13px;
