@@ -5,6 +5,10 @@ import Sidebar from './Sidebar';
 import btc from '../../resources/images/bitcoin.png';
 import usdt from '../../resources/images/usdt.png';
 import paypal from '../../resources/images/paypal.webp';
+import chime from '../../resources/images/chime.png';
+import cashapp from '../../resources/images/cashapp.webp';
+import zelle from '../../resources/images/zelle.png';
+import applepay from '../../resources/images/applepay.png';
 import bank from '../../resources/images/bank.png';
 import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
@@ -156,6 +160,46 @@ function ManualDeposits() {
               <button onClick={() => {
                 setRenderForm(true);
                 setMethod("Paypal");
+              }}>Deposit Now</button>
+            </div>
+            <div className="card-body">
+              <img src={zelle} alt="" />
+              <p>Zelle</p>
+              <span>Deposit Limit ($100.00 - $99,999,999.99)</span>
+              <span>Deposit Charge ($0.00)</span>
+              <button onClick={() => {
+                setRenderForm(true);
+                setMethod("Zelle");
+              }}>Deposit Now</button>
+            </div>
+            <div className="card-body">
+              <img src={cashapp} alt="" />
+              <p>Cash app</p>
+              <span>Deposit Limit ($100.00 - $99,999,999.99)</span>
+              <span>Deposit Charge ($0.00)</span>
+              <button onClick={() => {
+                setRenderForm(true);
+                setMethod("Cash app");
+              }}>Deposit Now</button>
+            </div>
+            <div className="card-body">
+              <img src={applepay} alt="" />
+              <p>Apple Pay</p>
+              <span>Deposit Limit ($100.00 - $99,999,999.99)</span>
+              <span>Deposit Charge ($0.00)</span>
+              <button onClick={() => {
+                setRenderForm(true);
+                setMethod("Apple Pay");
+              }}>Deposit Now</button>
+            </div>
+            <div className="card-body">
+              <img src={chime} alt="" />
+              <p>Chime</p>
+              <span>Deposit Limit ($100.00 - $99,999,999.99)</span>
+              <span>Deposit Charge ($0.00)</span>
+              <button onClick={() => {
+                setRenderForm(true);
+                setMethod("Chime");
               }}>Deposit Now</button>
             </div>
             <div className="card-body">
