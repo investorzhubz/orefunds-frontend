@@ -148,6 +148,7 @@ methods{
 }
 
 .deposits-form{
+    padding: 3rem 0;
     margin-bottom: 2rem;
     position:fixed;
     left: 0;
