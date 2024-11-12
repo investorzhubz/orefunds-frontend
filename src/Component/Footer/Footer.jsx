@@ -27,7 +27,7 @@ function Footer() {
     <div className="contactInfo">
         <h3>Contact</h3>
         <ul>
-        <li>support@capitaledgesavings.com</li>
+        <li>support@capitaledgesaving.com</li>
         {/* <li>6 Wayside Rd Suite G-1, Burlington,
 MA 01803, United States</li> */}
         </ul>

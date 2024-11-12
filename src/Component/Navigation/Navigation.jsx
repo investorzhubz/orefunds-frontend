@@ -102,7 +102,7 @@ function Navigation() {
               <div className="upper-menu-right-side">
                      <span>
                       <FaEnvelope color='#85BB65'/>
-                      <p>support@capitaledgesavings.com</p>
+                      <p>support@capitaledgesaving.com</p>
                      </span>
               </div>
             </div>

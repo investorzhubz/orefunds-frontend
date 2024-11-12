@@ -122,7 +122,7 @@ function LoginUser() {
             </div>
 
             <button type='submit' disabled={disabled}  className={disabled?'disabled':'enable'}> {btnState}</button>
-           <Link to='/forgot-password' style={{textDecoration:'none',width:'100%'}}> <button  disabled={disabled}  className='forgot-pass'>Forgot Password</button></Link>
+           <Link to='/forgot-password' style={{textDecoration:'none',width:'100%'}}> <button   className='forgot-pass'>Forgot Password</button></Link>
 
         </form>
       </div>
