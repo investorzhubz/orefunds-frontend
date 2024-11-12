@@ -162,7 +162,7 @@ function ManualDeposits() {
                 setMethod("Paypal");
               }}>Deposit Now</button>
             </div>
-            <div className="card-body">
+            {/* <div className="card-body">
               <img src={zelle} alt="" />
               <p>Zelle</p>
               <span>Deposit Limit ($100.00 - $99,999,999.99)</span>
@@ -201,7 +201,7 @@ function ManualDeposits() {
                 setRenderForm(true);
                 setMethod("Chime");
               }}>Deposit Now</button>
-            </div>
+            </div> */}
             <div className="card-body">
               <img src={bank} alt="" />
               <p>Bank</p>
@@ -245,7 +245,7 @@ function ManualDeposits() {
      </select>
    </div>
 
-                {
+                {/* {
                   (method === 'Bitcoin' || method === 'USDT (TRC20)') && (
                     <div className="send-money-form-group">
                       <label htmlFor="amount">Instructions</label>
@@ -258,10 +258,10 @@ function ManualDeposits() {
                       />
                     </div>
                   )
-                }
+                } */}
 
                 {
-                  (method === 'Paypal' || method === 'Bank') && (
+                
                     <div className="send-money-form-group">
                       <label htmlFor="amount">Instructions</label>
                       <input
@@ -272,7 +272,7 @@ function ManualDeposits() {
                         readOnly
                       />
                     </div>
-                  )
+                  
                 }
 
                 <div className="send-money-grid">
@@ -299,7 +299,7 @@ function ManualDeposits() {
                     onChange={handleChange}
                   />
                 </div>
-{
+{/* {
     (method === 'Bitcoin' || method === 'USDT (TRC20)') &&(
         <div className="send-money-form-group">
         <label htmlFor="paymentProof">Upload Proof of Payment</label>
@@ -328,7 +328,7 @@ function ManualDeposits() {
       </div>
 
     )
-}
+} */}
                
 
                 
