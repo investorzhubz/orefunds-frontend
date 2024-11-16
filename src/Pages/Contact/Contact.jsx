@@ -102,7 +102,7 @@ function Contact() {
             <p>
               Email Address
               <span>
-              support@pncrefunds.com
+              support@capitaledgesaving.com
               </span>
             </p>
           </div>
